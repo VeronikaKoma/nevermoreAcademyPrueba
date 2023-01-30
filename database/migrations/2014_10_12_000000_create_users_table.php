@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->integer('currentTerm');
+            $table->string('currentTerm');
             $table->string('img');
             $table->boolean('isTeacher');
             $table->rememberToken();
