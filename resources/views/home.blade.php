@@ -13,11 +13,19 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
                     {{ __('You are logged in!') }}
                 </div>
             </div>
         </div>
     </div>
+    <form action="{{ route('deleteUser', ['id' => $user->id]) }}" method="post">
+        @method('delete')
+        @csrf
+        <button type="submit"
+            class="deleteButton"
+            onclick="return confirm ('Are you sure you would like to delete this student? {{$user->name}} - ID{{$user->id}}')">
+            🗑
+        </button>
+    </form>
 </div>
 @endsection
