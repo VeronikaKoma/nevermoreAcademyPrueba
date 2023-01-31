@@ -1,12 +1,12 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Feature; // código UPDATE. Da error un test//
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class CrudUserTest extends TestCase
+class CRUDUserTest extends TestCase
 {
     /**
      * A basic feature test example.
@@ -26,10 +26,12 @@ class CrudUserTest extends TestCase
 
     public function test_anUserCanBeUpdated(){
 
-        $this-> withExecptionHandling();
+        $this->withExceptionHandling();
 
         $user = User::factory()->create();
-        $this-> AssertCount(1, User::all());
+        $this->assertCount(1, User::all());
     }
 
 }
+
+// código UPDATE. Da error un test//

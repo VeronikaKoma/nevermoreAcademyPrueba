@@ -21,5 +21,13 @@
             </div>
         </div>
     </div>
+    <!--La siguiente línea es del UPDATE, falta añadir la clase bootstrap-->
+    <a class="update"
+        href="{{ route('editUser', ['id' => $user->id]) }}">✏️</a>
+        <!--Fin del UPDATE-->
+    <!--La siguiente línea es del SHOW, falta añadir la clase bootstrap-->  
+    <a class="show"
+        href="{{ route('showUser', ['id' => $user->id]) }}">👁️</a> 
+        <!--Fin del SHOW-->
 </div>
 @endsection

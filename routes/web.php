@@ -20,3 +20,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//U DEL CRUD//
+Route::get('/edit/{id}' , [UserController::class, 'edit']) ->name('editUser');
+Route::patch('/user/{id}', [UserController::class, 'update']) ->name('updateUser');
+//Fin del U DEL CRUD//
+
+//SHOW DEL CRUD//
+Route::get('/show/{id}' , [UserController::class, 'show']) ->name('showUser');
+//Fin del SHOW DEL CRUD//
