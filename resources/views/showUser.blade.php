@@ -1,4 +1,3 @@
-// Código del SHOW//
 @extends('layout.app')
 
 @section('content')
@@ -19,4 +18,3 @@
     </div>
 
 @endsection
-// Fin de Código del SHOW//
