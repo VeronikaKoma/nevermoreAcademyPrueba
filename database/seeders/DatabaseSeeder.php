@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
         'email' => 'wednesdayaddams@nevermoreacademy.com',
         'password' => 'd9Jq!pDK', // password
         'currentTerm' => '2022-2023',
-        'img' => 'public\img\outcast01.PNG',
+        'img' => 'img/outcast01.png',
         'isTeacher' => '0',
         ]);
 
@@ -38,7 +38,7 @@ class DatabaseSeeder extends Seeder
         'email' => 'enidsinclair@nevermoreacademy.com',
         'password' => 'y!d3Yb5E', // password
         'currentTerm' => '2022-2023',
-        'img' => 'public\img\outcast07.PNG',
+        'img' => 'img/outcast07.PNG',
         'isTeacher' => '0',
         ]);    
 
@@ -48,7 +48,7 @@ class DatabaseSeeder extends Seeder
         'email' => 'xavierthorpe@nevermoreacademy.com',
         'password' => 'Ao63Q^T&', // password
         'currentTerm' => '2022-2023',
-        'img' => 'public\img\outcast03.PNG',
+        'img' => 'img/outcast03.PNG',
         'isTeacher' => '0',
         ]);   
 
@@ -58,7 +58,7 @@ class DatabaseSeeder extends Seeder
         'email' => 'biancabarclay@nevermoreacademy.com',
         'password' => '4o5C&z$2', // password
         'currentTerm' => '2022-2023',
-        'img' => 'public\img\outcast02.PNG',
+        'img' => 'img/outcast02.PNG',
         'isTeacher' => '0',
         ]);        
 
@@ -68,7 +68,7 @@ class DatabaseSeeder extends Seeder
         'email' => 'eugeneotinger@nevermoreacademy.com',
         'password' => '^qw%Q8YX', // password
         'currentTerm' => '2022-2023',
-        'img' => 'public\img\outcast04.PNG',
+        'img' => 'img/outcast04.PNG',
         'isTeacher' => '0',
         ]);  
 
@@ -78,7 +78,7 @@ class DatabaseSeeder extends Seeder
         'email' => 'ajaxpetropolus@nevermoreacademy.com',
         'password' => 'PwksC#B3', // password
         'currentTerm' => '2022-2023',
-        'img' => 'public\img\outcast05.PNG',
+        'img' => 'img/outcast05.PNG',
         'isTeacher' => '0',
         ]); 
 
@@ -88,7 +88,7 @@ class DatabaseSeeder extends Seeder
         'email' => 'yokotanaka@nevermoreacademy.com',
         'password' => 'ZY5Hz^Ea', // password
         'currentTerm' => '2022-2023',
-        'img' => 'public\img\outcast06.PNG',
+        'img' => 'img/outcast06.PNG',
         'isTeacher' => '0',
         ]); 
 
@@ -98,7 +98,7 @@ class DatabaseSeeder extends Seeder
         'email' => 'ignatiusitt@nevermoreacademy.com',
         'password' => '29tQR#%5', // password
         'currentTerm' => '2022-2023',
-        'img' => 'public\img\outcast08.PNG',
+        'img' => 'img/outcast08.PNG',
         'isTeacher' => '0',
         ]);        
     
@@ -108,7 +108,7 @@ class DatabaseSeeder extends Seeder
         'email' => 'marilynthornhill@nevermoreacademy.com',
         'password' => '7H%drfYJ', // password
         'currentTerm' => '2022-2023',
-        'img' => 'public\img\nevermoreTeacher.PNG',
+        'img' => 'img/nevermoreTeacher.PNG',
         'isTeacher' => '1',
         ]);           
     }
