@@ -23,3 +23,7 @@ Route::get('/home', [UserController::class, 'index']);
 Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteUser');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+
+// C del CRUD
+Route::get('/create',[UserController::class, 'create'])->name('createUser');
+
