@@ -1,21 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
-public function test_anUserCanBeCreate(){
-    $this->withExceptionHandling();
-
-    $response = $this->post(route('storeUser'),
-    [
-    'name' => 'name',
-    'surname' => 'surname',
-    'email' => 'email',
-    'password' => 'password'
-    ]);
-
-    $this->assertCount(1, User::all());
-
-}
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,13 +15,11 @@ public function test_anUserCanBeCreate(){
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Auth::routes();
 
-Auth::routes();
-
+// R del CRUD
+Route::get('/', [UserController::class, 'index'])->name('home');
+Route::get('/home', [UserController::class, 'index']);
+Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteUser');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-<?php
 
