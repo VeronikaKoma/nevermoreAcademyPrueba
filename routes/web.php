@@ -2,6 +2,21 @@
 
 use Illuminate\Support\Facades\Route;
 
+public function test_anUserCanBeCreate(){
+    $this->withExceptionHandling();
+
+    $response = $this->post(route('storeUser'),
+    [
+    'name' => 'name',
+    'surname' => 'surname',
+    'email' => 'email',
+    'password' => 'password'
+    ]);
+
+    $this->assertCount(1, User::all());
+
+}
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
