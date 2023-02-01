@@ -1,67 +1,121 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1>Project: "Nevermore Academy"</h1>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<h2>1. Project description:</h2>
+<ul>
+<li>The client has asked us to design and develop a schoolar aplication for both students and Teachers.</li>
+<li>On this app, students (users) should be able to visualize their grades while the teacher (admin) can see the students list with the trimestral grades, and add students if needed; they can also see the student profile where edit the student data or add (and edit) their respective exam grades.</li>
+<li>The administrator will have the tools for the management (CRUD) of the events.</li>
+<li>First of all, both of them have to log in to identify themselves as user or admin.</li>
+</ul>
 
-## About Laravel
+<h2>2. User stories:</h2>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h3>2.2 User Story (User):</h3>
+<ul>
+<li>Being able to register in the app as user.</li>
+<li>See the subjects and their respective exam grades.</li>
+<li>See the average grade (trimestral and final).</li>
+</ul>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<h3>2.3 User Story (Administrator):</h3>
+<ul>
+<li>Enter app as admin.</li>
+<li>View student list with trimestral average.</li>
+<li>Add new student.</li>
+<li>See student profile.</li>
+<li>Edit student data.</li>
+<li>Edit student exam grades.</li>
+<li>Add student grades.</li>
+<li>Close trimester and year.</li>
+</ul>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<h2>3. Fullstack Developer Team</h2>
 
-## Learning Laravel
+<ul>
+<li>Natalia Palomo https://github.com/Nataliaplm</li> 
+<li>Sandra León https://github.com/sandraldr27</li>   
+</ul>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<h2>4. Project Demo (Preview)</h2>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+<img style="width:400px; height:250px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213402788-585bfa53-121f-42ac-8058-15d968106c40.gif" alt="Preliminary project demo"/>
+</div>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+<h2>5. Initial Sketch</h2>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+<img style="width:600px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213318272-30867356-f456-4fe5-bdd4-ce6a9526c6e1.png" alt="initialSketch"/>
+</div>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+<h2>6. Atomic Design</h2> 
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+<img style="width:250px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213406315-f64eec51-42c3-4ee7-b5a4-4fe785958981.png" alt="Atomic Design"/>
+</div>
 
-### Premium Partners
+<h2>7. Final Design</h2> 
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+<img style="width:600px; height:500px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213404594-4e2ce34a-6da1-498d-9cc9-5fa599af9ccc.png" alt="PFinal Design "/>
+</div>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+<h2>8. Stacks</h2>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>PHP</li>
+<li>Laravel</li>
+<li>Boostrap</li>
+<li>NPM</li>
+</ul>
 
-## Contributing
+<h2>9. Required:</h2>
+<li>Composer & Laravel Installed.</li>
+<li>XAMPP/LAMPP Installed.</li>
+<li>NPM Installed.</li>
+<li>MySQL.</li>
+<li>PHP Artisan Serve.</li>
+<li>PHP (Minimum, version 7.4).</li>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<h3>To install Project</h3>
+<li>Open the IDE</li>
+<li>In the link https://github.com/camilaruiz17/tech-eventaccess the CODE tab.</li>
+<li>Within the CODE tab copy the link that appears in HTTPS.</li>
+<li>In the IDE run <b>git clone</b> command, an paste the HTTPS.</li>
+<li>Write in the IDE terminal the command: <b>composer install </b>or <b>composer update</b> (If you have previously installed composer), and press intro.</li>
+<li>Write in the IDE terminal the command: <b>composer create-project --prefer-dist</b> and press intro.</li>
+<li>An <b>.env</b> file (in the form of a little wheel) will be downloaded. Go into it and rename the line <b>DB_DATABASE</b>. Change the name generated by default and write <b>tech-event.</b></li>
+<li>Open XAMPP or LAMPP.</li>
+<li>Login to <b>phpMyAdmin</b> and create a new table named <b>tech-event.</b></li>
+<li>Type in the IDE terminal: <b>php artisan migrate:fresh --seed</b> and press intro.</li>
+<li>Type in the IDE terminal: <b>composer require laravel/ui</b> and press intro.</li>
+<li>Type in the IDE terminal: <b>php artisan ui bootstrap --auth</b> and press intro.</li>
+<li>Type in the IDE terminal: <b>npm install</b> and press intro.</li>
+<li>Type in the IDE terminal: <b>npm run dev</b> and press intro. Then open another terminal in the IDE without closing the previous one</li>
+<li>Type in the IDE terminal: <b>php artisan migrate</b> and press intro</li>
+<li>Type in the IDE terminal: <b>php artisan serve</b> and press intro.</li>
 
-## Code of Conduct
+<h3>Warning & Testing</h3>
+<ol>
+<li><b>Important</b>: If we then need to run more commands in the IDE, we'll open a third terminal without closing the previous two.</li>
+<li><b>Test</b>: Run in the IDE <b>php artisan test</b> & <b>vendor/bin/phpunit</b> where it should return the following result:<b> 5 passed</b> and <b> OK (5 test, 14 assertions)</b></li>
+</ol>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+<img style="width:600px; height:500px; margin:12px" src="https://user-images.githubusercontent.com/116546588/215830259-64fddeca-d2f8-481e-9eb5-30d82d953a07.png" alt="finalTest"/>
+</div>
 
-## Security Vulnerabilities
+<h2>10. Methodology:</h2>
+<ul>
+<li>Mob programming.</li>
+<li>Pair programming.</li>
+<li>Agile with SCRUM</li>
+</ul>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+<h2>11. Next Steps</h2>
+<ul>
+<li>Continue to implement the CRUD.</li>
+<li>Continue implementing the design.</li>
+<li>Continue implementing functionalities.</li>
+</ul>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# nevermoreAcademy
