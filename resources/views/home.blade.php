@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+<div>
+    <button class="btn btn-primary">
+        <a href="{{ route('createUser') }}">
+            <div class="text-warning">CREATE NEW STUDENT</div>
+        </a>
+    </button>
+</div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
