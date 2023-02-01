@@ -32,7 +32,7 @@ class CRUDUserTest extends TestCase
         $response->assertSee($user->name);
         $response->assertStatus(200)
         ->assertViewIs('home');
-    } 
+    }  
 
     public function test_aUserCanBeDeleted(){
         $this->withExceptionHandling();
