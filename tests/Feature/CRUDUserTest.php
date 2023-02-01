@@ -22,7 +22,7 @@ class CRUDUserTest extends TestCase
         'password' => 'password'
         ]);
 
-        $this->assertCount(1, User::all());0
+        $this->assertCount(1, User::all());
     }
 
 }
