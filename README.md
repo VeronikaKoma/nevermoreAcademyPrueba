@@ -48,7 +48,7 @@
 
 <h2>5. Initial Sketch</h2>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:600px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213318272-30867356-f456-4fe5-bdd4-ce6a9526c6e1.png" alt="initialSketch"/>
+<img style="width:600px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116545731/216052528-26ba1e22-fbeb-4e5d-ba67-d899dfff8117.png" alt="initialSketch"/>
 </div>
 
 <h2>6. Atomic Design</h2> 
