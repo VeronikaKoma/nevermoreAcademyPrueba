@@ -1,41 +1,102 @@
-//Línea de código añadida por SHOW//
-@param int
-@return \Illuminate\Http\Response
+<?php
 
-public function show($id)
+namespace App\Http\Controllers;
+use App\Models\User;
+use Illuminate\Http\Request;
+/*use Illuminate\Foundation\Auth\User;*/
+
+class UserController extends Controller
 {
-    $user = User::find($id);
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        //
 
-    return view ('showUser', compact('user'));
+        $users = User::get();
+        return view('home', compact('users'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+        $user = User::find($id);
+
+        return view ('showUser', compact('user'));
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //        
+        $user = User::find($id);
+
+        return view ('showUser', compact('user'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+        $user = request()->except('_token', '_method');
+
+        User::where('id', '=', $id)->update($user);
+    
+        return redirect()->route('home');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
+        User::destroy($id);
+
+        return redirect()->route('home');
+    }
 }
-
-//Acaba línea del SHOW//
-
-@param int
-@return \Illuminate\Http\Response
-
-public function edit($id)
-{
-    $user = User::find($id);
-
-    return view ('editUser', compact('user'));
-}
-
-//Línea de código añadida por UPDATE//
-
-@param \Illuminate\Http\Request
-@param int
-@return \Illuminate\Http\Response
-
-public function update(Request $request, $id)
-{
-    $user = request()->except('_token', '_method');
-
-    User::where('id', '=', $id)->update($user);
-
-    return redirect()->route('home');
-{
-//Línea de código añadida por UPDATE//
-
-
-
