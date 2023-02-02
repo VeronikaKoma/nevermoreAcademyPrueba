@@ -25,8 +25,6 @@ class UserController extends Controller
     {
         //
         return view ('createUser');
-
-
     }
 
     /**
@@ -42,9 +40,5 @@ class UserController extends Controller
         UserController::create($user); 
 
         return redirect()->route ('home');
-
-
     }
-    
-    
 }
