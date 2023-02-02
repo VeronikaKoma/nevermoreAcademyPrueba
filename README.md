@@ -1,3 +1,6 @@
+<h1>Readme in process<h1>
+    <img style="width:400px; height:250px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213402788-585bfa53-121f-42ac-8058-15d968106c40.gif" alt="Preliminary project demo"/>
+    
 <h1>Project: "Nevermore Academy"</h1>
 
 <h2>1. Project description:</h2>
@@ -42,7 +45,7 @@
 
 <h2>4. Project Demo (Preview)</h2>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:400px; height:250px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213402788-585bfa53-121f-42ac-8058-15d968106c40.gif" alt="Preliminary project demo"/>
+<img style="width:400px; height:250px; margin:12px" src="" alt="Preliminary project demo"/>
 </div>
 
 
@@ -53,12 +56,12 @@
 
 <h2>6. Atomic Design</h2> 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:250px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213406315-f64eec51-42c3-4ee7-b5a4-4fe785958981.png" alt="Atomic Design"/>
+<img style="width:250px; height:400px; margin:12px" src="" alt="Atomic Design"/>
 </div>
 
 <h2>7. Final Design</h2> 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:600px; height:500px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213404594-4e2ce34a-6da1-498d-9cc9-5fa599af9ccc.png" alt="PFinal Design "/>
+<img style="width:600px; height:500px; margin:12px" src="" alt="PFinal Design "/>
 </div>
 
 <h2>8. Stacks</h2>
@@ -81,7 +84,7 @@
 
 <h3>To install Project</h3>
 <li>Open the IDE</li>
-<li>In the link https://github.com/camilaruiz17/tech-eventaccess the CODE tab.</li>
+<li>In the link .. the CODE tab.</li>
 <li>Within the CODE tab copy the link that appears in HTTPS.</li>
 <li>In the IDE run <b>git clone</b> command, an paste the HTTPS.</li>
 <li>Write in the IDE terminal the command: <b>composer install </b>or <b>composer update</b> (If you have previously installed composer), and press intro.</li>
@@ -104,7 +107,7 @@
 </ol>
 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:600px; height:500px; margin:12px" src="https://user-images.githubusercontent.com/116546588/215830259-64fddeca-d2f8-481e-9eb5-30d82d953a07.png" alt="finalTest"/>
+<img style="width:600px; height:500px; margin:12px" src="" alt="finalTest"/>
 </div>
 
 <h2>10. Methodology:</h2>
