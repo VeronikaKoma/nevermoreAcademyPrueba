@@ -25,5 +25,26 @@ class UserController extends Controller
     {
         //
         return view ('createUser');
+
+
     }
+
+    /**
+     * Show the form for creating a new resource.
+     * @param \Illuminate\Http\Request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+        {
+        //
+        $user = request()->except('_token');
+
+        UserController::create($user); 
+
+        return redirect()->route ('home');
+
+
+    }
+    
+    
 }

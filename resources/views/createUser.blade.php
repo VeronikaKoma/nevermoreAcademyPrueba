@@ -7,11 +7,12 @@
                 <h2>New Student</h2>
             </div>
             <div class="createFormBox">
-                <form class="justify-content-center" action="{{ user('storeUser') }}" method="post">
+                <form class="justify-content-center" action="{{ route('storeUser') }}" method="post">
                     @csrf 
-                        <div class="mb-3">
-                            <label id="inputGroup-sizing-default">Name</label>
-                            <input type="text" name="name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Student Name">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+                            <input type="text" name="name" class="form-control" aria-label="Sizing example input" 
+                            aria-describedby="inputGroup-sizing-default" placeholder="Student Name">
                         </div>
 
                         <div class="surnameAndEmail">

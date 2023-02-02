@@ -25,5 +25,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 // C del CRUD
-Route::get('/create',[UserController::class, 'create'])->name('createUser');
+Route::get('/create', [UserController::class, 'create'])->name('createUser');
+Route::post('/', [UserController::class, 'store'])->name('storeUser');
 
