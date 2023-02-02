@@ -34,4 +34,4 @@ Route::patch('/user/{id}', [UserController::class, 'update']) ->name('updateUser
 Route::get('/show/{id}' , [UserController::class, 'show']) ->name('showUser');
 
 // D del CRUD
-Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteUser');
+Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteUser'); 
