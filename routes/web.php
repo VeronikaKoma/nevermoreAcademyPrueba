@@ -25,8 +25,6 @@ Route::post('/', [UserController::class, 'store']) ->name('storeUser');
 Route::get('/', [UserController::class, 'index'])->name('home');
 Route::get('/home', [UserController::class, 'index']);
 
-
-
 //U DEL CRUD//
 Route::get('/edit/{id}' , [UserController::class, 'edit']) ->name('editUser');
 Route::patch('/user/{id}', [UserController::class, 'update']) ->name('updateUser');
