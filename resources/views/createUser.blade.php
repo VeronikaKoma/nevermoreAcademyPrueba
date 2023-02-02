@@ -55,7 +55,7 @@
                             </div>
 
                             <div class="buttonCancelBox">
-                                <a style="text-decoration:none" href="{{ user('home') }}">Cancel</a>
+                                <a style="text-decoration:none" href="{{ route('home') }}">Cancel</a>
                             </div>
                         </div>
 
