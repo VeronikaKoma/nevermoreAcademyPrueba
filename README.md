@@ -2,10 +2,10 @@
 
 <h2>1. Project description:</h2>
 <ul>
-<li>The client has asked us to design and develop a schoolar aplication for both students and Teachers.</li>
-<li>On this app, students (users) should be able to visualize their grades while the teacher (admin) can see the students list with the trimestral grades, and add students if needed; they can also see the student profile where edit the student data or add (and edit) their respective exam grades.</li>
-<li>The administrator will have the tools for the management (CRUD) of the events.</li>
-<li>First of all, both of them have to log in to identify themselves as user or admin.</li>
+<li>The client has asked us to design and develop a scholar aplication for students and Teachers.</li>
+<li>First, both of them must to log in to identify themselves as user or admin.</li>
+<li>In this app, students (users) should be able to visualize their grades while the teacher (admin) can see the students list with the quarterly grades, and add students if needed; they can also see the student profile where edit the student data or add (and edit) their respective exam grades.</li>
+
 </ul>
 
 <h2>2. User stories:</h2>
@@ -32,6 +32,9 @@
 <h2>3. Fullstack Developer Team</h2>
 
 <ul>
+<li>Veronika Komarova https://github.com/VeronikaKoma</li> 
+<li>Noa Trujillo https://github.com/mintybubblegum</li>
+<li>Alesia Baldeon https://github.com/AlesiaCoder</li>
 <li>Natalia Palomo https://github.com/Nataliaplm</li> 
 <li>Sandra León https://github.com/sandraldr27</li>   
 </ul>
