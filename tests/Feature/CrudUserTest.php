@@ -44,4 +44,12 @@ class CRUDUserTest extends TestCase
 
         $this->assertCount(0, User::all());
     }
+
+    public function test_anUserCanBeUpdated(){
+        $this->withExceptionHandling();
+
+        $user = User::factory()->create();
+        
+        $this->assertCount(1, User::all());
+    }
 }
