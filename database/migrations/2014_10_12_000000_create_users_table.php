@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('currentTerm');
             $table->string('img');
-            $table->boolean('isTeacher');
+            $table->boolean('isTeacher')->default(false);
             $table->rememberToken();
             $table->timestamps();
             });

@@ -17,17 +17,19 @@ use App\Http\Controllers\UserController;
 
 Auth::routes();
 
+// C del CRUD
+Route::get('/create' , [UserController::class, 'create']) ->name('createUser');
+Route::post('/', [UserController::class, 'store']) ->name('storeUser');
+
 // R del CRUD
 Route::get('/', [UserController::class, 'index'])->name('home');
 Route::get('/home', [UserController::class, 'index']);
-Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteUser');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //U DEL CRUD//
 Route::get('/edit/{id}' , [UserController::class, 'edit']) ->name('editUser');
 Route::patch('/user/{id}', [UserController::class, 'update']) ->name('updateUser');
-//Fin del U DEL CRUD//
 
-//SHOW DEL CRUD//
 Route::get('/show/{id}' , [UserController::class, 'show']) ->name('showUser');
-//Fin del SHOW DEL CRUD//
+
+// D del CRUD
+Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteUser');     
