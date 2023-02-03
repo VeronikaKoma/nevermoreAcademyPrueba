@@ -7,7 +7,7 @@ use App\Models\User;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class CRUDUserTest extends TestCase
+class CRUDUserTest extends TestCase    
 {
     /**
      * A basic feature test example.
