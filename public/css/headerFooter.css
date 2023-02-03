@@ -1,3 +1,38 @@
-.navbar {
-    background-color: #180030; 
+* {
+    font-family: 'Girassol', cursive;
+}
+
+.headerBox {
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #180030;
+}
+
+.logo {
+    width: 65px;
+    height: auto;
+}
+
+.headerTitle {
+    font-size: 30px;
+}
+
+a, .headerBox{
+    color: #EAA41C !important;
+}
+
+.welcomeTxt {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav-link {
+    display: flex;
+    flex-wrap: wrap;
 }
