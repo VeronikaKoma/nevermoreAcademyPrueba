@@ -1,11 +1,14 @@
+<h1>Readme in process<h1>
+    <img style="width:400px; height:250px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213402788-585bfa53-121f-42ac-8058-15d968106c40.gif" alt="Preliminary project demo"/>
+    
 <h1>Project: "Nevermore Academy"</h1>
 
 <h2>1. Project description:</h2>
 <ul>
-<li>The client has asked us to design and develop a schoolar aplication for both students and Teachers.</li>
-<li>On this app, students (users) should be able to visualize their grades while the teacher (admin) can see the students list with the trimestral grades, and add students if needed; they can also see the student profile where edit the student data or add (and edit) their respective exam grades.</li>
-<li>The administrator will have the tools for the management (CRUD) of the events.</li>
-<li>First of all, both of them have to log in to identify themselves as user or admin.</li>
+<li>The client has asked us to design and develop a scholar aplication for students and Teachers.</li>
+<li>First, both of them must to log in to identify themselves as user or admin.</li>
+<li>In this app, students (users) should be able to visualize their grades while the teacher (admin) can see the students list with the quarterly grades, and add students if needed; they can also see the student profile where edit the student data or add (and edit) their respective exam grades.</li>
+
 </ul>
 
 <h2>2. User stories:</h2>
@@ -32,6 +35,9 @@
 <h2>3. Fullstack Developer Team</h2>
 
 <ul>
+<li>Veronika Komarova https://github.com/VeronikaKoma</li> 
+<li>Noa Trujillo https://github.com/mintybubblegum</li>
+<li>Alesia Baldeon https://github.com/AlesiaCoder</li>
 <li>Natalia Palomo https://github.com/Nataliaplm</li> 
 <li>Sandra León https://github.com/sandraldr27</li>   
 </ul>
@@ -39,23 +45,23 @@
 
 <h2>4. Project Demo (Preview)</h2>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:400px; height:250px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213402788-585bfa53-121f-42ac-8058-15d968106c40.gif" alt="Preliminary project demo"/>
+<img style="width:400px; height:250px; margin:12px" src="" alt="Preliminary project demo"/>
 </div>
 
 
 <h2>5. Initial Sketch</h2>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:600px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213318272-30867356-f456-4fe5-bdd4-ce6a9526c6e1.png" alt="initialSketch"/>
+<img style="width:600px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116545731/216052528-26ba1e22-fbeb-4e5d-ba67-d899dfff8117.png" alt="initialSketch"/>
 </div>
 
 <h2>6. Atomic Design</h2> 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:250px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213406315-f64eec51-42c3-4ee7-b5a4-4fe785958981.png" alt="Atomic Design"/>
+<img style="width:250px; height:400px; margin:12px" src="" alt="Atomic Design"/>
 </div>
 
 <h2>7. Final Design</h2> 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:600px; height:500px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213404594-4e2ce34a-6da1-498d-9cc9-5fa599af9ccc.png" alt="PFinal Design "/>
+<img style="width:600px; height:500px; margin:12px" src="" alt="PFinal Design "/>
 </div>
 
 <h2>8. Stacks</h2>
@@ -78,7 +84,7 @@
 
 <h3>To install Project</h3>
 <li>Open the IDE</li>
-<li>In the link https://github.com/camilaruiz17/tech-eventaccess the CODE tab.</li>
+<li>In the link .. the CODE tab.</li>
 <li>Within the CODE tab copy the link that appears in HTTPS.</li>
 <li>In the IDE run <b>git clone</b> command, an paste the HTTPS.</li>
 <li>Write in the IDE terminal the command: <b>composer install </b>or <b>composer update</b> (If you have previously installed composer), and press intro.</li>
@@ -101,7 +107,7 @@
 </ol>
 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:600px; height:500px; margin:12px" src="https://user-images.githubusercontent.com/116546588/215830259-64fddeca-d2f8-481e-9eb5-30d82d953a07.png" alt="finalTest"/>
+<img style="width:600px; height:500px; margin:12px" src="" alt="finalTest"/>
 </div>
 
 <h2>10. Methodology:</h2>

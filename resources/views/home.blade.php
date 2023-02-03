@@ -1,7 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-
+<div>
+    <button class="btn btn-primary">
+        <a href="{{ route('createUser') }}">
+            <div class="text-warning">➕</div>
+        </a>
+    </button>
+</div>
 @foreach ($users as $user)
 <div class="container">
     

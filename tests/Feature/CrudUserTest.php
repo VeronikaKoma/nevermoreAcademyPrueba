@@ -7,7 +7,7 @@ use App\Models\User;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class CRUDUserTest extends TestCase
+class CRUDUserTest extends TestCase    
 {
     /**
      * A basic feature test example.
@@ -32,7 +32,7 @@ class CRUDUserTest extends TestCase
         $response->assertSee($user->name);
         $response->assertStatus(200)
         ->assertViewIs('home');
-    }  
+    }
 
     public function test_aUserCanBeDeleted(){
         $this->withExceptionHandling();
@@ -44,4 +44,28 @@ class CRUDUserTest extends TestCase
 
         $this->assertCount(0, User::all());
     }
+
+    public function test_anUserCanBeUpdated(){
+        $this->withExceptionHandling();
+
+        $user = User::factory()->create();
+        
+        $this->assertCount(1, User::all());
+    }
+
+    public function test_aUserCanBeCreated(){
+        $this->withExceptionHandling();
+
+        $response = $this->post(route('storeUser'),
+        [
+            'name' => 'name',
+            'surname' => 'surname',
+            'email' => 'email',
+            'password' => 'password',
+            'img' => 'img',
+            'currentTerm' => 'currentTerm'
+        ]);
+
+        $this->assertCount(1, User::all());
+    } 
 }
