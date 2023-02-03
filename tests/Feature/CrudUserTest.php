@@ -49,8 +49,10 @@ class CRUDUserTest extends TestCase
         $this->withExceptionHandling();
 
         $user = User::factory()->create();
-        
         $this->assertCount(1, User::all()); 
+
+        $response = $this->patch(route('updateUser', $user->id),['name' => 'New Name']);
+        $this->assertEquals('New Name' , User::first()->name);
     }
 
     public function test_aUserCanBeCreated(){
