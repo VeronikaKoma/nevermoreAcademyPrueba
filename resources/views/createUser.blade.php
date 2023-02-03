@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+@section('content') 
     <div class="containerCreate">
         <div class="row justify-content-center">
             <div class="col-md-8">
