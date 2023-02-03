@@ -50,7 +50,7 @@ class CRUDUserTest extends TestCase
 
         $user = User::factory()->create();
         
-        $this->assertCount(1, User::all());
+        $this->assertCount(1, User::all()); 
     }
 
     public function test_aUserCanBeCreated(){
