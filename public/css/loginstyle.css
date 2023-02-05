@@ -1,7 +1,8 @@
-.container {
-background-color: rgb(24, 176, 176);
+.bodyApp {
+    background-color:blue; 
 }
 
-body {
-    background-color:blue; 
+.loginBox
+{
+    background-color: #180030;
 }
