@@ -33,7 +33,19 @@ a, .headerBox{
     color: #EAA41C !important;
 }
 
+.welcomeBox {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    width: 43px;
+    margin-bottom: 15px;
+}
+
 .welcomeTxt {
+    width: 350px;
+    height: 55px;
     font-weight: 400;
     font-size: 22px;
     line-height: 29px;

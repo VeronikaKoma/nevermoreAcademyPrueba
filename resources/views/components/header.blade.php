@@ -5,8 +5,11 @@
             Nevermore Academy
         </a>
     </div>
-    
-    <p class="welcomeTxt">Welcome to the first ever school for outcasts with normie subjects</p>
+    <div class="welcomeBox">
+        <img class="star" src="img/star.png" alt="Star Welcome Text">
+        <p class="welcomeTxt">Welcome to the first ever school for outcasts with normie subjects</p>
+        <img class="star" src="img/star.png" alt="Star Welcome Text">
+    </div>
 
     <ul class="loginRegisterBtns">
     <!-- Authentication Links -->
