@@ -2,12 +2,11 @@ body {
     background-image: url(../img/NMAbackground1.jpg);
     background-size: 120% 60%;
     position: center;
-    opacity:1 !important; 
+    opacity: 0,6 !important; 
 }
 
 .loginBox {
-    background-color: #180030; 
-    opacity:0,7 !important;
+    background-color:rgb(9.41176%, 0%, 18.82353%, 0.7)!important;  
     width:900px; /* ширина блока */
     height: 525px; /* высота блока */
     position: absolute;
@@ -17,7 +16,6 @@ body {
 }
 
 .email {
-    background-color: #3B2551;
     width: 20px;
     height: 14px; /* ширина */
     border-radius: 45px;
@@ -25,7 +23,7 @@ body {
     font-family: 'Girassol', cursive;
     font-size: 16px;
     left: 45%;
-    top: 25%;
+    top: 50%;
     flex-direction: row;
     margin-left: -20px;
     margin-top: -20px
@@ -39,7 +37,7 @@ body {
     font-family: 'Girassol', cursive;
     font-size: 16px;
     left: 45%;
-    top: 50%;
+    top: 65%;
     margin-left: -20px;
     margin-top: -20px;/* закругленные углы снизу */
 }
@@ -62,5 +60,9 @@ body {
     margin-left: -20px;
     margin-top: -20px
     
+}
+
+.div {
+    background-color: #3b2551;
 }
 
