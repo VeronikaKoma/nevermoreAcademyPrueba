@@ -1,7 +1,7 @@
 * {
     font-family: 'Girassol', cursive;
 }
-
+/* STARTS HEADER */
 .headerBox {
     width: auto;
     display: flex;
@@ -29,7 +29,7 @@
     font-size: 30px;
 }
 
-a, .headerBox{
+a, .headerBox , .footerBox {
     color: #EAA41C !important;
 }
 
@@ -61,4 +61,32 @@ a, .headerBox{
 
 .loginBtn {
     padding: 0px 20px 0px 0px;
+}
+
+/* STARTS FOOTER */
+.footerBox {
+    height: 40px;
+    width: auto;
+    background-color: #180030;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 0 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0px;
+}
+
+.socialMedia {
+    height: 23px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.copyright {
+    font-size: 20px;
 }

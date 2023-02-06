@@ -34,9 +34,9 @@
                     <ul class="navbar-nav me-auto">
 
                     </ul>
+
                 <x-header />
-                    <!-- Right Side Of Navbar -->
-                    
+
                 </div>
             </div>
         </nav>
@@ -45,5 +45,6 @@
             @yield('content')
         </main>
     </div>
+    <x-footer />
 </body>
 </html>
