@@ -34,14 +34,28 @@ class CRUDUserTest extends TestCase
         ->assertViewIs('home');
     }  
 
-    public function test_aUserCanBeDeleted(){
+    public function test_anUserCannotBeDeletedByAnUser(){
         $this->withExceptionHandling();
 
-        $user = User::factory()->create();
+        $user = User::factory()->create(['isTeacher' => false]);
+        $this->actingAs($user);
+
+        $response = $this->delete(route('deleteUser', $user->id));
         $this->assertCount(1, User::all());
 
-        $response = $this->delete(route("deleteUser", $user->id));
+    }
 
-        $this->assertCount(0, User::all());
+    public function test_anUserCanBeDeletedByATeacher(){
+        $this->withExceptionHandling();
+
+        $user = User::factory()->create(['isTeacher' => false]);
+        $this->actingAs($user);
+
+        $userTeacher = User::factory()->create(['isTeacher' => true]);
+        $this->actingAs($userTeacher);
+
+        $response = $this->delete(route('deleteUser', $user->id));
+        $this->assertCount(1, User::all());
+
     }
 }

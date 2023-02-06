@@ -20,14 +20,14 @@ Auth::routes();
 // R del CRUD
 Route::get('/', [UserController::class, 'index'])->name('home');
 Route::get('/home', [UserController::class, 'index']);
-Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteUser');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //U DEL CRUD//
 Route::get('/edit/{id}' , [UserController::class, 'edit']) ->name('editUser');
 Route::patch('/user/{id}', [UserController::class, 'update']) ->name('updateUser');
-//Fin del U DEL CRUD//
 
 //SHOW DEL CRUD//
 Route::get('/show/{id}' , [UserController::class, 'show']) ->name('showUser');
-//Fin del SHOW DEL CRUD//
+
+//CRUD usuarios
+Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteUser')->middleware('isteacher', 'auth');

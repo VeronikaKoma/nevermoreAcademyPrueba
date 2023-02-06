@@ -110,6 +110,9 @@ class DatabaseSeeder extends Seeder
         'currentTerm' => '2022-2023',
         'img' => 'img/nevermoreTeacher.PNG',
         'isTeacher' => '1',
-        ]);           
-    }
+        ]);  
+        
+    User::factory(5)->create();
+    }      
 }
+
