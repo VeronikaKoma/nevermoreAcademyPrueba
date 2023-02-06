@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/NMAbackground1.jpg);
+    background-image: url(../img/loginFronted/NevermoreAcademy.webp);
     background-size: 120% 60%;
     position: center;
     opacity: 0,6 !important; 
@@ -13,6 +13,14 @@ body {
     margin: 40%;
     box-sizing: border-box;
     border-radius: 45px; /* закругленные углы снизу */
+}
+
+.img {
+background-image: url(../img/loginFronted/logo_nevermore_academy.png);
+width: 150px;
+position: absolute;
+left: 45%;
+top: 5%;
 }
 
 .email {
@@ -31,7 +39,6 @@ body {
 }
 
 .password {
-    background-color: rgba(59, 37, 81, 0.8) !important;
     width: 20px;
     height: 14px; /* ширина */
     border-radius: 15px; 
@@ -45,23 +52,24 @@ body {
 }
 
 .btn-continue {
-    background: #EAA41C; /* фон */
-    border-radius: 15px; /* закругленные углы */
-    margin: 250px;
-    display: table-cell;
-    height: 75px;
-    vertical-align: middle !important; /* отступы */
-    padding: 22px 20px; /* оступы для текста */ 
+    /* фон */
+    /* закругленные углы */
+    /* vertical-align: middle !important; /* отступы */
+    /* padding: 22px 20px; /* оступы для текста */ 
     cursor: pointer;
     font-family: 'Girassol', cursive;
     font-size: 16px;
-    color: #180030; 
     position: absolute;
     left: 50%;
     top: 85%;
     margin-left: -20px;
     margin-top: -20px
     
+}
+
+.continue{
+    background: #EAA41C; /* фон */
+    border-radius: 15px;
 }
 
 input {

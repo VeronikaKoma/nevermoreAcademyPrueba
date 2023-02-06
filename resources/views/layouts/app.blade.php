@@ -19,6 +19,9 @@
 <body>
 
 <div class="loginBox">
+    <div class="img" "> 
+        <img src="/img/loginFronted/logo_nevermore_academy.png" width="150" height="150"></img> 
+    </div>
         <div class="email">
             <label for="email"><p><b style="color: #EAA41C">Outcast Email</b></label>
                     <input type="email" placeholder="Enter Email" name="email" required>
@@ -30,7 +33,7 @@
         </div>
 
     <div class="btn-continue">
-            <input type="submit" value="CONTINUE">
+            <button class="continue" type="submit" value="CONTINUE">CONTINUE</button>
         </div>
 </div>
 
