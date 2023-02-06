@@ -17,7 +17,6 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-
 <div class="loginBox">
     <div class="img" "> 
         <img src="/img/loginFronted/logo_nevermore_academy.png" width="150" height="150"></img> 
