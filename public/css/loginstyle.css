@@ -16,6 +16,7 @@ body {
 }
 
 .email {
+    color: rgba(59, 37, 81, 0.8) !important;
     width: 20px;
     height: 14px; /* ширина */
     border-radius: 45px;
@@ -30,6 +31,7 @@ body {
 }
 
 .password {
+    background-color: rgba(59, 37, 81, 0.8) !important;
     width: 20px;
     height: 14px; /* ширина */
     border-radius: 15px; 
@@ -62,7 +64,9 @@ body {
     
 }
 
-.div {
-    background-color: #3b2551;
+input {
+    background-color: rgba(59, 37, 81, 0.8) !important;
 }
+
+
 

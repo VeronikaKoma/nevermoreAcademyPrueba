@@ -20,7 +20,7 @@
 
 <div class="loginBox">
         <div class="email">
-            <label for="email"><p style="color:#EAA41C" word-spacing: 10px>Outcast Email</b></label>
+            <label for="email"><p><b style="color: #EAA41C">Outcast Email</b></label>
                     <input type="email" placeholder="Enter Email" name="email" required>
         </div>
     
