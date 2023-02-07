@@ -1,6 +1,14 @@
 * {
     font-family: 'Girassol', cursive;
 }
+/* Desktop */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* STARTS HEADER */
 .headerBox {
     width: auto;
@@ -9,7 +17,7 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: #180030;
-    overflow-inline: 20px;
+    position: sticky;
 }
 
 .logoMolecule {
@@ -50,7 +58,6 @@ a, .headerBox , .footerBox {
     font-size: 22px;
     line-height: 29px;
     text-align: center;
-    display: inline-block;
 }
 
 .nav-item {
@@ -63,6 +70,27 @@ a, .headerBox , .footerBox {
     padding: 0px 20px 0px 0px;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones */
+    .headerBox .container {
+        width: 100% !important;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .headerTitle {
+        display: none;
+    }
+
+    .welcomeBox {
+        display: none;
+    }
+
+    .registerBtn {
+        display: none;
+    }
+}
+
 /* STARTS FOOTER */
 .footerBox {
     height: 40px;
@@ -72,10 +100,12 @@ a, .headerBox , .footerBox {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px 0 20px;
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 0px;
+    padding: 5px 20px 0px 20px;
+    margin-top: auto;
+    bottom: -20px;
+
+    clear: both;
+    position: relative;
 }
 
 .socialMedia {
@@ -85,8 +115,10 @@ a, .headerBox , .footerBox {
     align-items: center;
     margin-right: 15px;
     margin-top: 3px;
+    bottom: 0px;
 }
 
 .copyright {
     font-size: 20px;
+    bottom: 0px;
 }

@@ -16,9 +16,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
 
+
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <link href="{{ asset('css/headerFooter.css') }}" rel="stylesheet">
+    <link rel="stylesheet" media="(max-width: 575px)" href="headerFooter.css" />
 
 </head>
 <body>
@@ -36,7 +38,7 @@
                     </ul>
 
                 <x-header />
-
+                
                 </div>
             </div>
         </nav>
