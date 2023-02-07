@@ -1,81 +1,79 @@
 body {
-    background-image: url(../img/loginFronted/NevermoreAcademy.webp);
+    background-image: url(../img/loginFronted/nevermoreBg.jpg);
     background-repeat: no-repeat; 
     background-size: cover;
-    position: center no-repeat;
-    opacity: 0,6 !important; 
 }
 
 .loginBox {
     background-color:rgb(9.41176%, 0%, 18.82353%, 0.7)!important;  
-    width:900px; /* ширина блока */
-    height: 525px; /* высота блока */
-    position: absolute;
-    margin: 40%;
+    padding: 60px 150px;
+    margin: 45px 0;
     box-sizing: border-box;
-    border-radius: 45px; /* закругленные углы снизу */
+    border-radius: 30px !important; /* закругленные углы снизу */
 }
 
-.img {
-background-image: url(../img/loginFronted/logo_nevermore_academy.png);
-width: 150px;
-position: absolute;
-left: 45%;
-top: 5%;
+.loginBox .loginBoxHeader {
+    text-align: center;
+    border-bottom: none;
 }
 
-.email {
-    color: rgba(59, 37, 81, 0.8) !important;
-    width: 20px;
-    height: 14px; /* ширина */
-    border-radius: 45px;
-    position: absolute;
-    font-family: 'Girassol', cursive;
+.loginBoxHeader h1{
+    color: #EAA41C;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.loginBoxLogo {
+    width: 150px;
+}
+
+.loginBox .loginBoxBody form label {
+    color: #EAA41C;
+    font-size: 24px;
+}
+
+.loginBox .loginBoxBody form input {
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgba(59, 37, 81, 0.8);
+    color: #EAA41C;
     font-size: 16px;
-    left: 45%;
-    top: 50%;
-    flex-direction: row;
-    margin-left: -20px;
-    margin-top: -20px
 }
 
-.password {
-    width: 20px;
-    height: 14px; /* ширина */
-    border-radius: 15px; 
-    position: absolute;
-    font-family: 'Girassol', cursive;
-    font-size: 16px;
-    left: 45%;
-    top: 65%;
-    margin-left: -20px;
-    margin-top: -20px;/* закругленные углы снизу */
+.loginBox .loginBoxBody form input:focus {
+     box-shadow: 0 0 0 0.15rem rgb(234 164 28 / 50%);
 }
 
-.btn-continue {
-    /* фон */
-    /* закругленные углы */
-    /* vertical-align: middle !important; /* отступы */
-    /* padding: 22px 20px; /* оступы для текста */ 
-    cursor: pointer;
-    font-family: 'Girassol', cursive;
-    font-size: 16px;
-    position: absolute;
-    left: 50%;
-    top: 85%;
-    margin-left: -20px;
-    margin-top: -20px
-    
+.loginBox .loginBoxBody form button {
+    margin-top: 15px;
+    border-radius: 20px;
+    border:1px solid transparent;
+    padding: 2px 25px;
+    background-color: #EAA41C;
+    color: #180030;
+    font-size: 24px;
 }
 
-.continue{
-    background: #EAA41C; /* фон */
-    border-radius: 15px;
+.loginBox .loginBoxBody form button:hover {
+    border:1px solid #EAA41C;
+    background-color: transparent;
+    color: #EAA41C;
 }
 
-input {
-    background-color: rgba(59, 37, 81, 0.8) !important;
-}
+@media (max-width: 1200px) {
 
+    .loginBox {
+        padding: 40px 50px;
+    }
 
+  }
+
+@media (max-width: 767px) {
+
+    .loginBox {
+        padding: 40px 20px;
+    }
+
+  }
 

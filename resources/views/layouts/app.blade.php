@@ -17,25 +17,6 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-<div class="loginBox">
-    <div class="img" "> 
-        <img src="/img/loginFronted/logo_nevermore_academy.png" width="150" height="150"></img> 
-    </div>
-        <div class="email">
-            <label for="email"><p><b style="color: #EAA41C">Outcast Email</b></label>
-                    <input type="email" placeholder="Enter Email" name="email" required>
-        </div>
-    
-        <div class="password">
-            <label for="psw"><b style="color:#EAA41C">Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-        </div>
-
-    <div class="btn-continue">
-            <button class="continue" type="submit" value="CONTINUE">CONTINUE</button>
-        </div>
-</div>
-
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
