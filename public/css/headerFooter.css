@@ -57,7 +57,7 @@ a, .headerBox , .footerBox {
     font-weight: 400;
     font-size: 22px;
     line-height: 29px;
-    text-align: center;
+    text-align: center; 
 }
 
 .nav-item {
