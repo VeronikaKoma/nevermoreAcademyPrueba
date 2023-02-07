@@ -17,6 +17,10 @@ use App\Http\Controllers\UserController;
 
 Auth::routes();
 
+// C del CRUD
+Route::get('/create' , [UserController::class, 'create']) ->name('createUser');
+Route::post('/', [UserController::class, 'store']) ->name('storeUser');
+
 // R del CRUD
 Route::get('/', [UserController::class, 'index'])->name('home');
 Route::get('/home', [UserController::class, 'index']);
@@ -26,8 +30,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/edit/{id}' , [UserController::class, 'edit']) ->name('editUser');
 Route::patch('/user/{id}', [UserController::class, 'update']) ->name('updateUser');
 
-//SHOW DEL CRUD//
+//Show
 Route::get('/show/{id}' , [UserController::class, 'show']) ->name('showUser');
 
-//CRUD usuarios
+//CRUD usuarios Auth Delete
 Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteUser')->middleware('isteacher', 'auth');

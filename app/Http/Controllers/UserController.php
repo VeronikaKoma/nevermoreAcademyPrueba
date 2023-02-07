@@ -28,6 +28,7 @@ class UserController extends Controller
     public function create()
     {
         //
+        return view ('createUser');
     }
 
     /**
@@ -39,6 +40,11 @@ class UserController extends Controller
     public function store(Request $request)
     {
         //
+        $user = request()->except('_token');
+
+        User::create($user);
+
+        return redirect()->route('home');
     }
 
     /**
@@ -66,7 +72,7 @@ class UserController extends Controller
         //        
         $user = User::find($id);
 
-        return view ('showUser', compact('user'));
+        return view ('editUser', compact('user'));
     }
 
     /**
