@@ -65,13 +65,36 @@ class CRUDUserTest extends TestCase
         $user = User::factory()->create();
         $this->assertCount(1, User::all()); 
 
+        $userTeacher = User::factory()->create(['isTeacher'=> true]);
+        $this->actingAs($userTeacher);
         $response = $this->patch(route('updateUser', $user->id),['name' => 'New Name']);
         $this->assertEquals('New Name' , User::first()->name);
+
+        $user = User::factory()->create(['isTeacher'=> false]);
+        $this->actingAs($user);
+        $response = $this->patch(route('updateUser', $user->id),['name' => 'New Name if no Teacher']);
+        $this->assertEquals('New Name' , User::first()->name);
+
     }
 
     public function test_aUserCanBeCreated(){
         $this->withExceptionHandling();
 
+        $userTeacher = User::factory()->create(['isTeacher'=>true]);
+        $this->actingAs($userTeacher);
+        $response = $this->post(route('storeUser'),
+        [
+            'name' => 'name',
+            'surname' => 'surname',
+            'email' => 'email',
+            'password' => 'password',
+            'img' => 'img',
+            'currentTerm' => 'currentTerm'
+        ]);
+        $this->assertCount(2, User::all());
+
+        $user = User::factory()->create(['isTeacher'=>false]);
+        $this->actingAs($user);
         $response = $this->post(route('storeUser'),
         [
             'name' => 'name',
@@ -82,6 +105,6 @@ class CRUDUserTest extends TestCase
             'currentTerm' => 'currentTerm'
         ]);
 
-        $this->assertCount(1, User::all());
+        $this->assertCount(3, User::all());
     } 
 }

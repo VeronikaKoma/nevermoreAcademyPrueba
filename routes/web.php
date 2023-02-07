@@ -18,20 +18,20 @@ use App\Http\Controllers\UserController;
 Auth::routes();
 
 // C del CRUD
-Route::get('/create' , [UserController::class, 'create']) ->name('createUser');
-Route::post('/', [UserController::class, 'store']) ->name('storeUser');
+Route::get('/create' , [UserController::class, 'create']) ->name('createUser')->middleware('isteacher', 'auth');
+Route::post('/', [UserController::class, 'store']) ->name('storeUser')->middleware('isteacher', 'auth');
 
 // R del CRUD
 Route::get('/', [UserController::class, 'index'])->name('home');
 Route::get('/home', [UserController::class, 'index']);
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('isteacher', 'auth');
 
 //U DEL CRUD//
 Route::get('/edit/{id}' , [UserController::class, 'edit']) ->name('editUser');
-Route::patch('/user/{id}', [UserController::class, 'update']) ->name('updateUser');
+Route::patch('/user/{id}', [UserController::class, 'update']) ->name('updateUser')->middleware('isteacher', 'auth');
 
 //Show
-Route::get('/show/{id}' , [UserController::class, 'show']) ->name('showUser');
+Route::get('/show/{id}' , [UserController::class, 'show']) ->name('showUser')->middleware('auth');
 
 //CRUD usuarios Auth Delete
 Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteUser')->middleware('isteacher', 'auth');
