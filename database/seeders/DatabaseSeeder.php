@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\User;
+use App\Models\Grade;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -110,6 +111,16 @@ class DatabaseSeeder extends Seeder
         'currentTerm' => '2022-2023',
         'img' => 'img/nevermoreTeacher.PNG',
         'isTeacher' => '1',
+        ]);
+
+        /* Grades seeder */
+    Grade::factory()->create([
+        'grade' => '',
+        'trimester' => '',
+        'subject' => fake()->name(),
+        'exam' => fake()->year(),
+        'schoolTerm' => fake()->dayOfMonth($max = 'now'),
+        'year' => fake()->year(),
         ]);
     }
 }
