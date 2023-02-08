@@ -24,7 +24,7 @@ Route::post('/', [UserController::class, 'store']) ->name('storeUser')->middlewa
 // R del CRUD
 Route::get('/', [UserController::class, 'index'])->name('home');
 Route::get('/home', [UserController::class, 'index']);
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('isteacher', 'auth');
+Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('isteacher', 'auth');
 
 //U DEL CRUD//
 Route::get('/edit/{id}' , [UserController::class, 'edit']) ->name('editUser');
@@ -41,7 +41,7 @@ Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteU
 Route::get('/', [GradeController::class, 'index'])->name('home');
 Route::get('/home', [GradeController::class, 'index']);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('isteacher', 'auth');
+Route::get('/home', [GradeController::class, 'index'])->name('home')->middleware('isteacher', 'auth');
 
 
 //U CRUD Grade
