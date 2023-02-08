@@ -15,7 +15,7 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Auth::routes();
+Auth::routes();    
 
 // C del CRUD
 Route::get('/create' , [UserController::class, 'create']) ->name('createUser')->middleware('isteacher', 'auth');
