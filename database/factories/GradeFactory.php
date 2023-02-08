@@ -18,12 +18,12 @@ class GradeFactory extends Factory
     {
         return [
             //
-            'grade' => fake()->name(),
-            'trimester' => fake()->year(),
-            'subject' => fake()->name(),
-            'exam' => fake()->year(),
-            'schoolTerm' => fake()->dayOfMonth($max = 'now'),
-            'year' => fake()->year(),
+            'grade' => $this->faker->name(),
+            'trimester' => $this->faker->year(),
+            'subject' => $this->faker->name(),
+            'exam' => $this->faker->year(),
+            'schoolTerm' => $this->faker->dayOfMonth($max = 'now'),
+            'year' => $this->faker->year(),
         ];
     }
 }
