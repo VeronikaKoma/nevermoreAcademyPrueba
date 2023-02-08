@@ -21,4 +21,13 @@ class CRUDGradeTest extends TestCase
         
         $this->assertCount(1, Grade::all());
     }
+
+    //TEST DELETE GRADE2 DEL CRUD//
+    public function test_aGradeCanBeDeleted(){
+        $this->withExceptionHandling();
+
+        $grade = Grade::factory()->create();
+        
+        $this->assertCount(1, Grade::all());
+    }
 }
