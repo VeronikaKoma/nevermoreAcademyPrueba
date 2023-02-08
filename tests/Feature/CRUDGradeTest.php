@@ -20,5 +20,9 @@ class CRUDGradeTest extends TestCase
         $grade = Grade::factory()->create();
         
         $this->assertCount(1, Grade::all());
+
+        $response = $this->patch(route('updateGrade', $grade->id),['name' => 'New Name']);
+        $this->assertEquals('New Name' , Grade::first()->name);
+
     }
 }
