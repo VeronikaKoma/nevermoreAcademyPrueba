@@ -108,3 +108,4 @@ class CRUDUserTest extends TestCase
         $this->assertCount(3, User::all());
     } 
 }
+ 

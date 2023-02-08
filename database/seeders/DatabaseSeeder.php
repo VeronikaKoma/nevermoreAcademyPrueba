@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\User;
+use App\Models\Grade;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -113,6 +114,73 @@ class DatabaseSeeder extends Seeder
         ]);  
         
     User::factory(5)->create();
-    }      
+
+
+        /* Grades seeder */
+    Grade::factory()->create([
+        'grade' => '6.25',
+        'trimester' => '1',
+        'subject' => 'Maths',
+        'exam' => '1',
+        'schoolTerm' => '2022-2023',
+        'year' => '11',
+        ]);
+
+    Grade::factory()->create([
+        'grade' => '7.85',
+        'trimester' => '1',
+        'subject' => 'Maths',
+        'exam' => '2',
+        'schoolTerm' => '2022-2023',
+        'year' => '11',
+        ]);
+    
+    Grade::factory()->create([
+        'grade' => '4.30',
+        'trimester' => '2',
+        'subject' => 'English',
+        'exam' => '2',
+        'schoolTerm' => '2022-2023',
+        'year' => '11',
+        ]);
+
+    Grade::factory()->create([
+        'grade' => '5.25',
+        'trimester' => '1',
+        'subject' => 'History',
+        'exam' => '3',
+        'schoolTerm' => '2022-2023',
+        'year' => '11',
+        ]);
+
+    Grade::factory()->create([
+        'grade' => '2.25',
+        'trimester' => '1',
+        'subject' => 'English',
+        'exam' => '2',
+        'schoolTerm' => '2022-2023',
+        'year' => '11',
+        ]);
+
+    Grade::factory()->create([
+        'grade' => '4.25',
+        'trimester' => '1',
+        'subject' => 'Geography',
+        'exam' => '1',
+        'schoolTerm' => '2022-2023',
+        'year' => '11',
+        ]);
+
+    Grade::factory()->create([
+        'grade' => '9.75',
+        'trimester' => '1',
+        'subject' => 'Maths',
+        'exam' => '3',
+        'schoolTerm' => '2022-2023',
+        'year' => '11',
+        ]);
+    
+/*     Grade::factory(10)->create(); */
+    }
 }
 

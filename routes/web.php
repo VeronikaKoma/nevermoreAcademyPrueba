@@ -35,3 +35,11 @@ Route::get('/show/{id}' , [UserController::class, 'show']) ->name('showUser')->m
 
 //CRUD usuarios Auth Delete
 Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteUser')->middleware('isteacher', 'auth');
+
+
+
+//U CRUD Grade
+Route::get('/edit/{id}' , [GradeController::class, 'edit']) ->name('editGrade');
+Route::patch('/Grade/{id}', [GradeController::class, 'update']) ->name('updateGrade');
+
+Route::get('/show/{id}' , [GradeController::class, 'show']) ->name('showGrade');

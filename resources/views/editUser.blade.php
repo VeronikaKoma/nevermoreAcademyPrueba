@@ -4,7 +4,7 @@
 
     <form class="justify-content-center" action="{{ route('updateUser', $user->id) }}" method="POST">
                         @method('PATCH')
-                        @csrf
+                        @csrf 
                         <div class="input-group mb-3">
                             <span class="input-group-text" style="border: solid 3px purple" id="inputGroup-sizing-default"></span>
                             <input type="text" name="name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{ $user->name }}">
