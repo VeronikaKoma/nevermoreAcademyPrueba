@@ -11,7 +11,7 @@ class Grade extends Model
     use Grade;
 }
 
-namespace App\Models;
+    namespace App\Http\Models;
 
-    use HasApiTokens, HasFactory, Notifiable;
+        use HasApiTokens, HasFactory, Notifiable;
 
