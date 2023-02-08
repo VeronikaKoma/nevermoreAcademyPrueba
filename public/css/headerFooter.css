@@ -5,8 +5,8 @@
 
 body {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
 }
 
 /* STARTS HEADER */
@@ -34,7 +34,7 @@ body {
 }
 
 .headerTitle {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 a, .headerBox , .footerBox {
@@ -93,32 +93,36 @@ a, .headerBox , .footerBox {
 
 /* STARTS FOOTER */
 .footerBox {
-    height: 40px;
-    width: auto;
+    /*height: 40px;
+    width: auto;*/
     background-color: #180030;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px 0px 20px;
-    margin-top: auto;
+    padding: 10px 20px /*0px 20px*/;
+    /*margin-top: auto;
     bottom: -20px;
-
     clear: both;
-    position: relative;
+    position: relative;*/
 }
 
 .socialMedia {
-    height: 23px;
-    width: auto;
+    /*height: 23px;
+    width: auto;*/
     display: flex;
     align-items: center;
-    margin-right: 15px;
+    /*margin-right: 15px;
     margin-top: 3px;
-    bottom: 0px;
+    bottom: 0px;*/
+}
+
+.socialMedia .navbar-brand:first-child {
+padding-right: 20px;
 }
 
 .copyright {
     font-size: 20px;
-    bottom: 0px;
+    /*bottom: 0px;*/
+    margin-bottom: 0px;
 }
