@@ -27,7 +27,7 @@ class UserFactory extends Factory
             'surname' => fake()->lastName(),
             'currentTerm' => fake()->year(),
             'img' => fake()->image(),
-            'isTeacher' => fake()->boolean(),
+            'isTeacher' => false,
         ];
     }
 
