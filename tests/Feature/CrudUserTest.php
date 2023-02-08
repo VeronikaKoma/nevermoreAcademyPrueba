@@ -69,9 +69,9 @@ class CRUDUserTest extends TestCase
         ]);
 
         $this->assertCount(1, User::all());
-
+    }
         //create de Grades
-        public function test_aGradeCanBeCreated(){
+        public function test_aGradeCanBeCreated(){     
             $this->withExceptionHandling();
     
             $response = $this->post(route('storeUser'),
@@ -86,5 +86,4 @@ class CRUDUserTest extends TestCase
     
             $this->assertCount(1, User::all());
     } 
-}
- 
+}    
