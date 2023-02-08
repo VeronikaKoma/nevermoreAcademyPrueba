@@ -34,15 +34,29 @@ class CRUDUserTest extends TestCase
         ->assertViewIs('home');
     }
 
-    public function test_aUserCanBeDeleted(){
+    public function test_anUserCannotBeDeletedByAnUser(){
         $this->withExceptionHandling();
 
-        $user = User::factory()->create();
+        $user = User::factory()->create(['isTeacher' => false]);     
+        $this->actingAs($user);     
+
+        $response = $this->delete(route('deleteUser', $user->id));
         $this->assertCount(1, User::all());
 
-        $response = $this->delete(route("deleteUser", $user->id));
+    }
 
-        $this->assertCount(0, User::all());
+    public function test_anUserCanBeDeletedByATeacher(){
+        $this->withExceptionHandling();
+
+        $user = User::factory()->create(['isTeacher' => false]);
+        $this->actingAs($user);
+
+        $userTeacher = User::factory()->create(['isTeacher' => true]);
+        $this->actingAs($userTeacher);
+
+        $response = $this->delete(route('deleteUser', $user->id));
+        $this->assertCount(1, User::all());
+
     }
 
     public function test_anUserCanBeUpdated(){
@@ -51,13 +65,36 @@ class CRUDUserTest extends TestCase
         $user = User::factory()->create();
         $this->assertCount(1, User::all()); 
 
+        $userTeacher = User::factory()->create(['isTeacher'=> true]);
+        $this->actingAs($userTeacher);
         $response = $this->patch(route('updateUser', $user->id),['name' => 'New Name']);
         $this->assertEquals('New Name' , User::first()->name);
+
+        $user = User::factory()->create(['isTeacher'=> false]);
+        $this->actingAs($user);
+        $response = $this->patch(route('updateUser', $user->id),['name' => 'New Name if no Teacher']);
+        $this->assertEquals('New Name' , User::first()->name);
+
     }
 
     public function test_aUserCanBeCreated(){
         $this->withExceptionHandling();
 
+        $userTeacher = User::factory()->create(['isTeacher'=>true]);
+        $this->actingAs($userTeacher);
+        $response = $this->post(route('storeUser'),
+        [
+            'name' => 'name',
+            'surname' => 'surname',
+            'email' => 'email',
+            'password' => 'password',
+            'img' => 'img',
+            'currentTerm' => 'currentTerm'
+        ]);
+        $this->assertCount(2, User::all());
+
+        $user = User::factory()->create(['isTeacher'=>false]);
+        $this->actingAs($user);
         $response = $this->post(route('storeUser'),
         [
             'name' => 'name',
