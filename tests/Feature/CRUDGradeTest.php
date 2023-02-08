@@ -27,7 +27,7 @@ class CRUDGradeTest extends TestCase
             $this->withExceptionHandling();
 
             $userTeacher = Grade::factory()->create(['isTeacher'=>true]);
-            $this->actingAs($userTeacher);
+            $this->actingAs($userTeacher);  
             $response = $this->post(route('storeUser'),
             [
                 'name' => 'name',
