@@ -15,24 +15,27 @@
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-                            <input type="text" name="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{ $user->email }}">
+                            <input type="email" name="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{ $user->email }}">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
+                            <input type="password" name="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{ $user->password }}">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="inputGroup-sizing-default">Image</span>
-                            <input type="text" name="img" class="form-control subirFoto" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{ $user ->img}}">
+                            <input type="text" name="img" class="form-control subirFoto" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{ $user->img}}">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="inputGroup-sizing-default">Academic Year</span>
-                            <input type="text" name="CurrentTerm" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{ $user->year }}">
+                            <input type="text" name="currentTerm" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{ $user->currentTerm}}">
                         </div>
                     
                         <div class="btnContainer">
-                        <div class="btnBack" >
-                            <button class="cancelBtn"><a href="{{ route('home') }}">CANCEL</a></button>
+                            <div class="btnBack" >
+                                <button class="cancelBtn"><a href="{{ route('home') }}">CANCEL</a></button>
+                            </div>
+                            <div class="btnCreate">
+                                <button type="submit" class="editBtn" value="Create">SAVE CHANGES</button>
+                            </div>
                         </div>
-                        <div class="btnCreate">
-                            <button type="submit" class="editBtn" value="Create">EDIT</button>
-                        </div>
-                    </div>
 
-<!--Aquí termina lo del código UPDATE-->

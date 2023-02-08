@@ -29,6 +29,7 @@ Route::get('/home', [UserController::class, 'index']);
 Route::get('/edit/{id}' , [UserController::class, 'edit']) ->name('editUser');
 Route::patch('/user/{id}', [UserController::class, 'update']) ->name('updateUser');
 
+//Show
 Route::get('/show/{id}' , [UserController::class, 'show']) ->name('showUser');
 
 // D del CRUD

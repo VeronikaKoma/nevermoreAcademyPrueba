@@ -9,7 +9,7 @@
             <h1 class="boldy">{{ $user->name}}</h1>
             <h1 class="boldy">{{ $user->surname}}</h1>
             <h2>{{ $user->email}}</h2>
-            <h2>{{ $user->CurrentTerm}}</h2>
+            <h2>{{ $user->currentTerm}}</h2>
         </div>
     </div>
 
