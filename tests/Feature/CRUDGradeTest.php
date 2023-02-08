@@ -30,4 +30,5 @@ class CRUDGradeTest extends TestCase
         
         $this->assertCount(1, Grade::all());
     }
+    
 }
