@@ -37,8 +37,8 @@ class CRUDUserTest extends TestCase
     public function test_anUserCannotBeDeletedByAnUser(){
         $this->withExceptionHandling();
 
-        $user = User::factory()->create(['isTeacher' => false]);
-        $this->actingAs($user);
+        $user = User::factory()->create(['isTeacher' => false]);     
+        $this->actingAs($user);     
 
         $response = $this->delete(route('deleteUser', $user->id));
         $this->assertCount(1, User::all());
