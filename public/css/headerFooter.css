@@ -70,28 +70,8 @@ a, .headerBox , .footerBox {
     padding: 0px 20px 0px 0px;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones */
-    .headerBox .container {
-        width: 100% !important;
-        display: flex;
-        justify-content: space-around;
-    }
 
-    .headerTitle {
-        display: none;
-    }
-
-    .welcomeBox {
-        display: none;
-    }
-
-    .registerBtn {
-        display: none;
-    }
-}
-
-/* STARTS FOOTER */
+/*FOOTER */
 .footerBox {
     /*height: 40px;
     width: auto;*/
