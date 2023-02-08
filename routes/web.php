@@ -34,3 +34,10 @@ Route::get('/show/{id}' , [UserController::class, 'show']) ->name('showUser');
 
 // D del CRUD
 Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteUser');     
+
+// R CRUD Grade
+Route::get('/', [GradeController::class, 'index'])->name('home');
+Route::get('/home', [GradeController::class, 'index']);
+Route::delete('/delete/{id}', [GradeController::class, 'destroy'])->name('deleteGrade');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/grades', [GradeController::class, 'index']);
