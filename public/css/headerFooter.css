@@ -11,7 +11,7 @@ body {
 
 /* STARTS HEADER */
 .headerBox {
-    width: auto;
+    /*width: auto;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,16 +20,23 @@ body {
     position: sticky;
 }
 
+.headerBox > .container {
+    padding: 10px 0;
+}
+
+.headerBox > .container > .navbar-toggler {
+    display: none;
+}
+
 .logoMolecule {
     display: flex;
     align-items: center;
-    margin-top: 0;
-    margin-bottom: 1rem;
+    /*margin-top: 0;
+    margin-bottom: 0;*/
 }
 
 .logo {
-    width: 65px;
-    height: auto;
+    max-width: 65px;
     padding: 0px 15px 0px 0px;
 }
 
@@ -37,7 +44,7 @@ body {
     font-size: 28px;
 }
 
-a, .headerBox , .footerBox {
+a, .headerBox {
     color: #EAA41C !important;
 }
 
@@ -48,33 +55,39 @@ a, .headerBox , .footerBox {
 
 .star {
     width: 43px;
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
 }
 
 .welcomeTxt {
     width: 350px;
-    height: 55px;
+    /*height: 55px;*/
+    margin-bottom:0;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 29px;
     text-align: center; 
 }
 
-.nav-item {
+.headerBox .loginRegisterBtns {
+    margin-bottom: 0;
+}
+
+.headerBox .nav-item {
     display: inline-block;
     font-size: 22px;
     line-height: 29px;
 }
 
-.loginBtn {
+.headerBox .loginBtn {
     padding: 0px 20px 0px 0px;
 }
 
 
-/*FOOTER */
+/*STARTS FOOTER */
 .footerBox {
     /*height: 40px;
     width: auto;*/
+    color: #EAA41C !important;
     background-color: #180030;
     display: flex;
     flex-wrap: wrap;
@@ -105,4 +118,84 @@ padding-right: 20px;
     font-size: 20px;
     /*bottom: 0px;*/
     margin-bottom: 0px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    
+    /* For small screen and tablet */
+    
+    /* HEADER */
+
+    .headerBox {
+        justify-content: center;
+    }
+
+    .headerBox > .container {
+        padding: 20px 0;
+    }
+
+    .logoMolecule {
+        justify-content: center;
+    }
+
+    .welcomeBox {
+        text-align: center;
+    }
+    
+    .welcomeTxt {
+        width:100%; 
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    
+    /* For mobile phones */
+    
+    /* HEADER */
+
+    .headerBox {
+        justify-content: space-between;
+    }
+    
+    .headerBox > .container {
+        width: 100% !important;
+        /*display: flex;*/
+        justify-content: space-around;
+    }
+
+    .navbarSupportedContent .headerBox {
+        justify-content: space-between;
+    }
+
+    .logoMolecule {
+        padding-left: 20px;
+    }
+
+    .headerTitle {
+        display: none;
+    }
+
+    .welcomeBox {
+        display: none;
+    }
+
+    .registerBtn {
+        display: none;
+    }
+
+    /*FOOTER */
+
+    .footerBox {
+        display: block;
+        text-align: center;
+    }
+
+    .socialMedia {
+        margin: 10px 0;
+        justify-content: center;
+    }
 }
