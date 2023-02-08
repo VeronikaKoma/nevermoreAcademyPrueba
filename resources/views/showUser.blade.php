@@ -1,20 +1,30 @@
-@extends('layout.app')
+@extends('layouts.app')
 
 @section('content')
-
-    <div class= "text-center">
-        <img class= "" src="{{ $user->img}}">
-        
-        <div>
-            <h1 class="boldy">{{ $user->name}}</h1>
-            <h1 class="boldy">{{ $user->surname}}</h1>
-            <h2>{{ $user->email}}</h2>
-            <h2>{{ $user->currentTerm}}</h2>
-        </div>
-    </div>
-
     <div>
-        <a class="" href="{{ route('home') }}">↩️</a>
+        <button class="btn btn-primary">
+            <a href="{{ route('createUser') }}">
+                <div class="text-warning">➕</div>
+            </a>
+        </button>
     </div>
-
+    @foreach ($users as $user)
+    {{ auth()->user()->name }}
+    <div class="container">
+        
+        <a class="update"
+            href="{{ route('editUser', ['id' => $user->id]) }}">✏️</a>
+        
+        <a class="show"
+            href="{{ route('showUser', $user->id) }}">👁️</a> 
+            
+        <img src="{{ $user->img }}" alt="{{ $user->name }} {{ $user->surname }} profile picture">
+        <p>{{ $user->id }}. {{ $user->name }} {{ $user->surname }}</p>
+        <form action="{{ route('deleteUser', ['id' => $user->id]) }}" method="post">
+            @method('delete')
+            @csrf
+            <button type="submit" class="deleteButton" onclick="return confirm ('Are you sure you would like to delete this student? {{$user->name}} - ID{{$user->id}}')">🗑</button>
+        </form>
+    </div>
+    @endforeach
 @endsection
