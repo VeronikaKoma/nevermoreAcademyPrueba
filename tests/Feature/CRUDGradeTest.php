@@ -3,7 +3,7 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
-use App\Models\Grade;
+use App\Models\Grade; 
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -26,5 +26,8 @@ class CRUDGradeTest extends TestCase
 
         $response->assertStatus(200)
         ->assertViewIs('home');
+        $this->assertCount(1, Grade::all());
+
+
     }
 }

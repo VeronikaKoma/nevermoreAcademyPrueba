@@ -18,7 +18,7 @@ class IsTeacher
     public function handle(Request $request, Closure $next)
         {
             if(Auth::user()->isTeacher){
-            return $next($request);
+            return $next($request); 
         }
 
         return redirect()->route('home');
