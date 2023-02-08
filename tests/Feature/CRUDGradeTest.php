@@ -14,11 +14,17 @@ class CRUDGradeTest extends TestCase
      *
      * @return void
      */
-    public function test_aGradeCanBeUpdated(){
+        public function test_listGradeAppearInHomeView(){
         $this->withExceptionHandling();
 
-        $grade = Grade::factory()->create();
+        $grades = Grade::factory()->create();
+        $grade = $grades[0];
+
+        $response = $this->get('/');
         
-        $this->assertCount(1, Grade::all());
+        $response->assertSee($grade->name);
+
+        $response->assertStatus(200)
+        ->assertViewIs('home');
     }
 }

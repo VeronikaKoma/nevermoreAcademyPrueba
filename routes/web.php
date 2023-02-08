@@ -37,6 +37,12 @@ Route::get('/show/{id}' , [UserController::class, 'show']) ->name('showUser')->m
 Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteUser')->middleware('isteacher', 'auth');
 
 
+//R CRUD Grade
+Route::get('/', [GradeController::class, 'index'])->name('home');
+Route::get('/home', [GradeController::class, 'index']);
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('isteacher', 'auth');
+
 
 //U CRUD Grade
 Route::get('/edit/{id}' , [GradeController::class, 'edit']) ->name('editGrade');
