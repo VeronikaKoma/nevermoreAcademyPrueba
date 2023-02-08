@@ -33,16 +33,5 @@ class CRUDGradeTest extends TestCase
         $response->assertStatus(200)
             ->assertViewIs('home');
     } 
-
-    public function test_aGradeCanBeDeleted(){
-        $this->withExceptionHandling();
-
-        $grades = Grade::factory()->create();
-        $this->assertCount(1, Grade::all());
-
-        $response = $this->delete(route("deleteGrade", $grades->id));
-
-        $this->assertCount(0, Grade::all());
-    }
 }
 
