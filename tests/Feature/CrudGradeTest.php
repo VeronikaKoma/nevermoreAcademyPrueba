@@ -3,7 +3,7 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
-use App\Models\Grade;
+use App\Http\Models\Grade;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Http\Controllers\GradeController;
@@ -26,12 +26,12 @@ class CRUDGradeTest extends TestCase
 
     public function test_listGradeAppearInHomeView(){
         $this->withExceptionHandling();
-        $grade = Grade::Factory(2)->create();
-        $grades = $grade[0];
+        $grades = Grade::Factory(2)->create();
+        $grade = $grades[0];
         $response = $this->get('/');
         $response->assertSee($grade->name);
         $response->assertStatus(200)
-            ->assertViewIs('home');
+        ->assertViewIs('home');
     } 
 }
 

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Grade;
+use App\Http\Models\Grade;
 use Illuminate\Http\Request;
 /*use Illuminate\Foundation\Auth\Grade;*/
 

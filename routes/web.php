@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-
+use App\Http\Models;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +38,4 @@ Route::delete('/delete/{id}', [UserController::class, 'destroy'])->name('deleteU
 // R CRUD Grade
 Route::get('/', [GradeController::class, 'index'])->name('home');
 Route::get('/home', [GradeController::class, 'index']);
-Route::delete('/delete/{id}', [GradeController::class, 'destroy'])->name('deleteGrade');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/grades', [GradeController::class, 'index']);
+Route::get('/grade', [GradeController::class, 'index']);

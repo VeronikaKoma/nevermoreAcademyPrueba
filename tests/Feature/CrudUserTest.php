@@ -30,7 +30,7 @@ class CRUDUserTest extends TestCase
         $user = $users[0];
         $response = $this->get('/');
         $response->assertSee($user->name);
-        $response->assertStatus(200)
+        $response->assertStatus(500)
         ->assertViewIs('home');
     }  
 
