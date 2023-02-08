@@ -177,6 +177,6 @@ class DatabaseSeeder extends Seeder
         'year' => '11',
         ]);
     
-    Grade::factory(10)->create();
+/*     Grade::factory(10)->create(); */
     }
 }
