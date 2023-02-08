@@ -178,7 +178,7 @@ class DatabaseSeeder extends Seeder
         'exam' => '3',
         'schoolTerm' => '2022-2023',
         'year' => '11',
-        ]);
+        ]); 
     
 /*     Grade::factory(10)->create(); */
     }
