@@ -26,13 +26,16 @@ class CRUDGradeTest extends TestCase
 
     }
 
-    //TEST DELETE GRADE2 DEL CRUD//
+    //TEST DELETE GRADE DEL CRUD//
     public function test_aGradeCanBeDeleted(){
         $this->withExceptionHandling();
 
         $grade = Grade::factory()->create();
-        
         $this->assertCount(1, Grade::all());
+
+        $response = $this->delete(route('deleteGrade', $grade->id));
+
+        $this->assertCount(0, Grade::all());
     }
     
 }

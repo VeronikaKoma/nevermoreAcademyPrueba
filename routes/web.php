@@ -43,3 +43,6 @@ Route::get('/edit/{id}' , [GradeController::class, 'edit']) ->name('editGrade');
 Route::patch('/Grade/{id}', [GradeController::class, 'update']) ->name('updateGrade');
 
 Route::get('/show/{id}' , [GradeController::class, 'show']) ->name('showGrade');
+
+//D DEL CRUD DE GRADE//
+Route::delete('/delete/{id}', [GradeController::class, 'destroy'])->name('deleteGrade');

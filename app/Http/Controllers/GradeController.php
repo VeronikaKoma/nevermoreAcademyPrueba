@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Grade;
 use Illuminate\Http\Request;
 
 class GradeController extends Controller
@@ -71,6 +72,7 @@ class GradeController extends Controller
         //
     }
 
+    
     /**
      * Remove the specified resource from storage.
      *
@@ -80,5 +82,8 @@ class GradeController extends Controller
     public function destroy($id)
     {
         //
+        Grade::destroy($id);
+
+        return redirect()->route('showUser');
     }
 }
