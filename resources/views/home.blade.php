@@ -13,6 +13,16 @@
         </div>
     </div>
 
+<!--     He metido aquí la pag 27 del create porque crei que es mas apropiado no sé -->
+
+    <div>
+        <button class="btn btn-primary">
+            <a href="{{ route('createUser') }}">
+                <div class="text-warning">➕</div>
+            </a>
+        </button>
+    </div>
+
     <div>
         <a class="" href="{{ route('home') }}">↩️</a>
     </div>
