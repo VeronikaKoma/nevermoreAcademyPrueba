@@ -26,5 +26,5 @@
             <button type="submit" class="deleteButton" onclick="return confirm ('Are you sure you would like to delete this student? {{$user->name}} - ID{{$user->id}}')">🗑</button>
         </form>
     </div>
-    @endforeach
+    @endforeach 
 @endsection
