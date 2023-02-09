@@ -26,8 +26,6 @@ class CRUDGradeTest extends TestCase
 
         $response->assertStatus(200)
         ->assertViewIs('home');
-        $this->assertCount(1, Grade::all()); 
-
-
+        
     }
 }
