@@ -89,7 +89,7 @@ class CRUDUserTest extends TestCase
             'email' => 'email',
             'password' => 'password',
             'img' => 'img',
-            'currentTerm' => 'currentTerm'
+            'currentTerm' => 'currentTerm' 
         ]);
         $this->assertCount(2, User::all());
 
