@@ -10,7 +10,7 @@
     </div>
     @foreach ($users as $user)
     {{ auth()->user()->name }}
-    <div class="container">
+    <div class="container"> 
         
         <a class="update"
             href="{{ route('editUser', ['id' => $user->id]) }}">✏️</a>
