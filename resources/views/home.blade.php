@@ -2,7 +2,37 @@
 
 @section('content')
 
-    <div class= "text-center">
+    <img src="bg" alt="">
+
+@endsection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class= "text-center">
         <img class= "" src="{{$user->img}}">
         
         <div>
@@ -16,5 +46,3 @@
     <div>
         <a class="" href="{{ route('home') }}">↩️</a>
     </div>
-
-@endsection
