@@ -1,0 +1,95 @@
+* {
+    font-family: 'Girassol', cursive;
+}
+
+body {
+    background-image: url(../img/loginFronted/nevermoreBg.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.loginBox.login {
+    padding: 60px 0px;
+}
+
+.loginBox {
+    background-color:rgb(9.41176%, 0%, 18.82353%, 0.7)!important;  
+    padding: 60px 150px;
+    margin: 45px 0;
+    box-sizing: border-box;
+    border-radius: 30px !important; /* закругленные углы снизу */
+}
+
+.loginBox .loginBoxHeader {
+    text-align: center;
+    border-bottom: none;
+}
+
+.loginBoxHeader h1{
+    color: #EAA41C;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.loginBoxLogo {
+    width: 150px;
+}
+
+.loginBox .loginBoxBody form label {
+    color: #EAA41C;
+    font-size: 24px;
+}
+
+.loginBox .loginBoxBody form input {
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgba(59, 37, 81, 0.8);
+    color: #EAA41C;
+    font-size: 16px;
+}
+
+.loginBox .loginBoxBody form input:focus {
+    box-shadow: 0 0 0 0.15rem rgb(234 164 28 / 50%);
+}
+
+.loginBox .loginBoxBody form .form-check-input {
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+}
+
+.loginBox .loginBoxBody form button {
+    margin-top: 15px;
+    border-radius: 20px;
+    border:1px solid transparent;
+    padding: 2px 25px;
+    background-color: #EAA41C;
+    color: #180030;
+    font-size: 24px;
+}
+
+.loginBox .loginBoxBody form button:hover {
+    border:1px solid #EAA41C;
+    background-color: transparent;
+    color: #EAA41C;
+}
+
+@media (max-width: 1200px) {
+
+    .loginBox {
+        padding: 40px 50px;
+    }
+
+  }
+
+@media (max-width: 767px) {
+
+    .loginBox {
+        padding: 40px 20px;
+    }
+
+  }
+

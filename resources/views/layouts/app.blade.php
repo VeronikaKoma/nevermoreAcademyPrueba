@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="{{ asset('css/loginstyle.css') }}" rel="stylesheet">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -39,12 +39,13 @@
 
                 <x-header />
                 
+                    
                 </div>
             </div>
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            @yield('content') 
         </main>
     </div>
     <x-footer />
