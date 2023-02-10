@@ -5,13 +5,10 @@
 
 body {
     min-height: 100vh;
-    /*display: flex;
-    flex-direction: column;*/
 }
 
 /* STARTS HEADER */
 .headerBox {
-    /*width: auto;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,8 +28,6 @@ body {
 .logoMolecule {
     display: flex;
     align-items: center;
-    /*margin-top: 0;
-    margin-bottom: 0;*/
 }
 
 .logo {
@@ -55,12 +50,10 @@ a, .headerBox {
 
 .star {
     width: 43px;
-    /*margin-bottom: 15px;*/
 }
 
 .welcomeTxt {
     width: 350px;
-    /*height: 55px;*/
     margin-bottom:0;
     font-weight: 400;
     font-size: 18px;
@@ -85,29 +78,18 @@ a, .headerBox {
 
 /*STARTS FOOTER */
 .footerBox {
-    /*height: 40px;
-    width: auto;*/
     color: #EAA41C !important;
     background-color: #180030;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px /*0px 20px*/;
-    /*margin-top: auto;
-    bottom: -20px;
-    clear: both;
-    position: relative;*/
+    padding: 10px 20px;
 }
 
 .socialMedia {
-    /*height: 23px;
-    width: auto;*/
     display: flex;
     align-items: center;
-    /*margin-right: 15px;
-    margin-top: 3px;
-    bottom: 0px;*/
 }
 
 .socialMedia .navbar-brand:first-child {
@@ -116,7 +98,6 @@ padding-right: 20px;
 
 .copyright {
     font-size: 20px;
-    /*bottom: 0px;*/
     margin-bottom: 0px;
 }
 
@@ -144,7 +125,7 @@ padding-right: 20px;
     }
     
     .welcomeTxt {
-        width:100%; 
+        width: 100%; 
     }
     
 
@@ -163,7 +144,6 @@ padding-right: 20px;
     
     .headerBox > .container {
         width: 100% !important;
-        /*display: flex;*/
         justify-content: space-around;
     }
 
