@@ -1,0 +1,181 @@
+* {
+    font-family: 'Girassol', cursive;
+}
+/* Desktop */
+
+body {
+    min-height: 100vh;
+}
+
+/* STARTS HEADER */
+.headerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #180030;
+    position: sticky;
+}
+
+.headerBox > .container {
+    padding: 10px 0;
+}
+
+.headerBox > .container > .navbar-toggler {
+    display: none;
+}
+
+.logoMolecule {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 65px;
+    padding: 0px 15px 0px 0px;
+}
+
+.headerTitle {
+    font-size: 28px;
+}
+
+a, .headerBox {
+    color: #EAA41C !important;
+}
+
+.welcomeBox {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    width: 43px;
+}
+
+.welcomeTxt {
+    width: 350px;
+    margin-bottom:0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center; 
+}
+
+.headerBox .loginRegisterBtns {
+    margin-bottom: 0;
+}
+
+.headerBox .nav-item {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 29px;
+}
+
+.headerBox .loginBtn {
+    padding: 0px 20px 0px 0px;
+}
+
+
+/*STARTS FOOTER */
+.footerBox {
+    color: #EAA41C !important;
+    background-color: #180030;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+}
+
+.socialMedia .navbar-brand:first-child {
+padding-right: 20px;
+}
+
+.copyright {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    
+    /* For small screen and tablet */
+    
+    /* HEADER */
+
+    .headerBox {
+        justify-content: center;
+    }
+
+    .headerBox > .container {
+        padding: 20px 0;
+    }
+
+    .logoMolecule {
+        justify-content: center;
+    }
+
+    .welcomeBox {
+        text-align: center;
+    }
+    
+    .welcomeTxt {
+        width: 100%; 
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    
+    /* For mobile phones */
+    
+    /* HEADER */
+
+    .headerBox {
+        justify-content: space-between;
+    }
+    
+    .headerBox > .container {
+        width: 100% !important;
+        justify-content: space-around;
+    }
+
+    .navbarSupportedContent .headerBox {
+        justify-content: space-between;
+    }
+
+    .logoMolecule {
+        padding-left: 20px;
+    }
+
+    .headerTitle {
+        display: none;
+    }
+
+    .welcomeBox {
+        display: none;
+    }
+
+    .registerBtn {
+        display: none;
+    }
+
+    /*FOOTER */
+
+    .footerBox {
+        display: block;
+        text-align: center;
+    }
+
+    .socialMedia {
+        margin: 10px 0;
+        justify-content: center;
+    }
+}
