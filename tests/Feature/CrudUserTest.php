@@ -30,8 +30,7 @@ class CRUDUserTest extends TestCase
         $user = $users[0];
         $response = $this->get('/');
         $response->assertSee($user->name);
-        $response->assertStatus(200)
-        ->assertViewIs('home');
+        $response->assertStatus(200)->assertViewIs('home');
     }
 
     public function test_aUserCanBeDeleted(){
@@ -64,7 +63,7 @@ class CRUDUserTest extends TestCase
             'password' => 'password',
             'img' => 'img',
             'currentTerm' => 'currentTerm'
-        ]);
+        ]); 
 
         $this->assertCount(1, User::all());
     } 
