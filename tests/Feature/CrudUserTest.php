@@ -42,7 +42,6 @@ class CRUDUserTest extends TestCase
 
         $response = $this->delete(route('deleteUser', $user->id));
         $this->assertCount(1, User::all());
-
     }
 
     public function test_anUserCanBeDeletedByATeacher(){
@@ -56,7 +55,6 @@ class CRUDUserTest extends TestCase
 
         $response = $this->delete(route('deleteUser', $user->id));
         $this->assertCount(1, User::all()); 
-
     }
 
     public function test_anUserCanBeUpdated(){
@@ -75,7 +73,6 @@ class CRUDUserTest extends TestCase
         $this->actingAs($user);
         $response = $this->patch(route('updateUser', $user->id),['name' => 'New Name if no Teacher']);
         $this->assertEquals('New Name' , User::first()->name);
-
     }
 
     public function test_aUserCanBeCreated(){
@@ -94,10 +91,9 @@ class CRUDUserTest extends TestCase
         ]); 
         $this->assertCount(2, User::all());
 
-
         $user = User::factory()->create(['isTeacher'=>false]);
         $this->actingAs($user);
-        $response = $this->post(route('storeUser'),
+        $response = $this->post(route('storeUser'), 
         [
             'name' => 'name',
             'surname' => 'surname',
@@ -108,5 +104,5 @@ class CRUDUserTest extends TestCase
         ]);
 
         $this->assertCount(3, User::all());
-    } 
+    }
 }
