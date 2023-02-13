@@ -1,7 +1,5 @@
 <?php
-
 namespace Tests\Feature;
-
 use Tests\TestCase;
 use App\Models\User;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -14,13 +12,10 @@ class CRUDUserTest extends TestCase
      *
      * @return void
      */
-
     use RefreshDatabase;
-    
     /* public function test_example()
     {
         $response = $this->get('/');
-
         $response->assertStatus(200);
     } */
 
@@ -35,26 +30,20 @@ class CRUDUserTest extends TestCase
 
     public function test_aUserCanBeDeleted(){
         $this->withExceptionHandling();
-
         $user = User::factory()->create();
         $this->assertCount(1, User::all());
-
         $response = $this->delete(route("deleteUser", $user->id));
-
         $this->assertCount(0, User::all());
     }
 
     public function test_anUserCanBeUpdated(){
         $this->withExceptionHandling();
-
         $user = User::factory()->create();
-        
         $this->assertCount(1, User::all());
-    }
+    } 
 
     public function test_aUserCanBeCreated(){
         $this->withExceptionHandling();
-
         $response = $this->post(route('storeUser'),
         [
             'name' => 'name',
@@ -63,8 +52,7 @@ class CRUDUserTest extends TestCase
             'password' => 'password',
             'img' => 'img',
             'currentTerm' => 'currentTerm'
-        ]); 
-
+        ]);
         $this->assertCount(1, User::all());
-    } 
+    }
 }

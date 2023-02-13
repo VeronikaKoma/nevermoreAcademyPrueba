@@ -4,10 +4,12 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+            <div class="card loginBox login">
+            <div class="card-header loginBoxHeader">
+                <img class="loginBoxLogo" src="../img/loginFronted/logo_nevermore_academy.png" alt="Nevermore Academy Logo">
+            </div>
 
-                <div class="card-body">
+                <div class="card-body loginBoxBody">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 

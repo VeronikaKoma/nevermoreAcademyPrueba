@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="{{ asset('css/loginstyle.css') }}" rel="stylesheet">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -25,8 +25,8 @@
 </head>
 <body>
     <div id="app">
-        <nav class="headerBox">
-            <div class="container">
+        <nav class="headerBox">   
+            <div class="container">   
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,7 +44,7 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            @yield('content') 
         </main>
     </div>
     <x-footer />
