@@ -26,7 +26,7 @@ class CRUDUserTest extends TestCase
 
     public function test_listUserAppearInHomeView(){
         $this->withExceptionHandling();
-        $users = User::Factory(2)->create(); 
+        $users = User::Factory(2)->create();
         $user = $users[0];
         $response = $this->get('/');
         $response->assertSee($user->name);
