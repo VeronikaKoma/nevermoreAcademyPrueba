@@ -55,7 +55,7 @@ class CRUDUserTest extends TestCase
         $this->actingAs($userTeacher);
 
         $response = $this->delete(route('deleteUser', $user->id));
-        $this->assertCount(1, User::all());
+        $this->assertCount(1, User::all()); 
 
     }
 
@@ -65,6 +65,7 @@ class CRUDUserTest extends TestCase
         $user = User::factory()->create();
         $this->assertCount(1, User::all()); 
 
+        $response = $this->delete(route("deleteUser", $user->id));
         $userTeacher = User::factory()->create(['isTeacher'=> true]);
         $this->actingAs($userTeacher);
         $response = $this->patch(route('updateUser', $user->id),['name' => 'New Name']);
@@ -85,13 +86,14 @@ class CRUDUserTest extends TestCase
         $response = $this->post(route('storeUser'),
         [
             'name' => 'name',
-            'surname' => 'surname',
+            'surname' => 'surname', 
             'email' => 'email',
             'password' => 'password',
             'img' => 'img',
             'currentTerm' => 'currentTerm'
         ]); 
         $this->assertCount(2, User::all());
+
 
         $user = User::factory()->create(['isTeacher'=>false]);
         $this->actingAs($user);
