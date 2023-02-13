@@ -90,7 +90,7 @@ class CRUDUserTest extends TestCase
             'password' => 'password',
             'img' => 'img',
             'currentTerm' => 'currentTerm'
-        ]);
+        ]); 
         $this->assertCount(2, User::all());
 
         $user = User::factory()->create(['isTeacher'=>false]);
