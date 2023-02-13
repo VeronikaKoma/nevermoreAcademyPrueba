@@ -103,6 +103,6 @@ class CRUDUserTest extends TestCase
             'currentTerm' => 'currentTerm'
         ]);
 
-        $this->assertCount(3, User::all());
+        $this->assertCount(3, User::all()); 
     }
 } 
